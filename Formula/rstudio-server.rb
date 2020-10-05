@@ -34,7 +34,7 @@ class RstudioServer < Formula
   if OS.linux?
     depends_on "boost-rstudio-server"
   elsif OS.mac?
-    depends_on "boost-rstudio-server" => :build
+    depends_on "grighi/base/boost-rstudio-server" => :build
   end
   depends_on "cmake" => :build
   depends_on "gcc" => :build

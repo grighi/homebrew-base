@@ -1,4 +1,11 @@
-![BrewSci logo](https://raw.githubusercontent.com/brewsci/homebrew-science/master/.github/brewsci-256x256.png)
+
+Forked and installed because brewsci/base still uses rstudio-server 1.2, which depends on openssl1.0, but I need openssl1.1 for other packages.
+
+```
+- forked randy3k/homebrew-base
+- merged rstudio-server-1.3 to master so homebrew will see it
+- tapped this repo, install from tap
+```
 
 # Brewsci/base
 
