@@ -107,7 +107,7 @@ class RstudioServer < Formula
       args << "-DRSTUDIO_TARGET=Server"
       args << "-DRSTUDIO_USE_SYSTEM_BOOST=Yes"
       args << "-DBoost_NO_SYSTEM_PATHS=On"
-      args << "-DBOOST_ROOT=#{Formula["boost-rstudio-server"].opt_prefix}"
+      args << "-DBOOST_ROOT=#{Formula["grighi/base/boost-rstudio-server"].opt_prefix}"
       args << "-DCMAKE_INSTALL_PREFIX=#{prefix}/rstudio-server"
       args << "-DCMAKE_CXX_FLAGS=-I#{Formula["openssl"].opt_include}"
       args << "-DRSTUDIO_CRASHPAD_ENABLED=0"
